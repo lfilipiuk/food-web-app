@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+<!--  <link rel="stylesheet" href="css/normalize.css">-->
+<!--  <link rel="stylesheet" href="css/main.css">-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <meta name="theme-color" content="#fafafa">
+
+  <title>Products</title>
+</head>
+
+<body style="color: white; background-color: #3b3b3b">
+
+  <div class="container mt-5">
+    <div class="text-center">
+      <h1 class="display-5 mb-5"><strong>FoodApp: Products</strong></h1>
+    </div>
+    <div class="main row justify-content-center">
+      <form action="" id="product-form" class="row justify-content-center mb-4" autocomplete="off">
+
+        <div class="d-none">
+          <label for="productId">Product Id</label>
+          <input class="form-control" id="productId" type="text" placeholder="Enter Product Id">
+        </div>
+
+        <div class="col-8 mb-3">
+          <label for="name">Name</label>
+          <input class="form-control" id="name" type="text" placeholder="Enter Product Name">
+        </div>
+
+        <div class="col-8 mb-3">
+          <label for="calories">Calories</label>
+          <input class="form-control" id="calories" type="text" placeholder="Enter Calories">
+        </div>
+
+        <div class="col-8 mb-3">
+          <label for="carbohydrates">Carbohydrates</label>
+          <input class="form-control" id="carbohydrates" type="text" placeholder="Enter Carbohydrates">
+        </div>
+
+        <div class="col-8 mb-3">
+          <label for="sugars">Sugars</label>
+          <input class="form-control" id="sugars" type="text" placeholder="Enter Sugars">
+        </div>
+
+        <div class="col-8 mb-3">
+          <label for="protein">Protein</label>
+          <input class="form-control" id="protein" type="text" placeholder="Enter Protein">
+        </div>
+
+        <div class="col-8 mb-3">
+          <label for="sugars">Fat</label>
+          <input class="form-control" id="fat" type="text" placeholder="Enter Fat">
+        </div>
+
+        <div class="col-8">
+          <input class="btn btn-success add-btn" type="submit" value="Submit">
+        </div>
+      </form>
+
+      <div class="col-10-mt-5">
+        <table class="table table-striped table-dark" id="productTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Calories</th>
+              <th>Carbohydrates</th>
+              <th>Sugars</th>
+              <th>Protein</th>
+              <th>Fat</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="product-list"></tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/product/products.js"></script>
+
+
+</body>
+
+</html>
